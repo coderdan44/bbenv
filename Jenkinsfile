@@ -6,6 +6,7 @@ pipeline {
         stage('DEV') {
             steps {
                 echo 'DEV'
+		sh 'ssh -i ~/BBKeypair.pem ubuntu@54.175.173.193 pwd'
             }
         }
         stage('TEST') {
