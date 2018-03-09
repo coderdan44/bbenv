@@ -2,6 +2,8 @@
  * * Module dependencies.
  * */
 
+require('dotenv/config')
+//require('../bestbuy.ca.js')
 var express = require('express');
 var app = express();
 var path = require('path');
