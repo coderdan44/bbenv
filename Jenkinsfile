@@ -11,7 +11,7 @@ pipeline {
         stage('TEST') {
             steps {
                 echo 'Testing...'
-		ls
+		sh 'ls'
 		sh 'ssh -i BBKeypair.pem ubuntu@172.31.90.151 pwd'
             }
         }
