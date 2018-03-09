@@ -1,21 +1,15 @@
 
 pipeline {
 
-    agent {
-        docker {
-            image 'node'
-            args '-u root'
-        }
-    }
 
     stages {
-        stage('Build') {
+        stage('DEV') {
             steps {
-                echo 'Building...'
-                sh 'npm install'
+                echo 'DEV'
+                ssh ubuntu@172.31.86.74
             }
         }
-        stage('Test') {
+        stage('TEST') {
             steps {
                 echo 'Testing...'
                 sh 'npm test'
