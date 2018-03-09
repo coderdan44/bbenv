@@ -6,7 +6,7 @@ pipeline {
         stage('DEV') {
             steps {
                 echo 'DEV'
-		sh 'ssh -i /var/lib/jenkins/BBKeypair.pem ubuntu@172.31.86.74 pwd'
+		sh 'ssh -i /var/lib/jenkins/BBKeypair.pem ubuntu@172.31.86.74'
             }
         }
         stage('TEST') {
