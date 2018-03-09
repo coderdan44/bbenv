@@ -14,7 +14,7 @@ app.set('view engine', 'ejs');
 
 var routes = require('./routes/routes.js');
 
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 80);
 
 switch (process.env.ENV){
    case 'DEV': 
