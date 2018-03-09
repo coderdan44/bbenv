@@ -2,11 +2,13 @@
  * * Module dependencies.
  * */
 
+require('dotenv/config')
+//require('../bestbuy.ca.js')
 var express = require('express');
 var app = express();
 var path = require('path');
 var ejs = require('ejs');
-
+var ENV = 'TEST';
 
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);
@@ -14,7 +16,7 @@ app.set('view engine', 'ejs');
 
 var routes = require('./routes/routes.js');
 
-app.set('port', process.env.PORT || 8000);
+app.set('port', process.env.PORT || 80);
 
 switch (process.env.ENV){
    case 'DEV': 
