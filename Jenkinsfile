@@ -22,4 +22,3 @@ pipeline {
             }
         }
     }
-}msg = process.env.ENV;
