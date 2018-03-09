@@ -6,7 +6,7 @@ var express = require('express');
 var app = express();
 var path = require('path');
 var ejs = require('ejs');
-
+var ENV = 'TEST';
 
 app.set('views', __dirname + '/views');
 app.engine('html', require('ejs').renderFile);

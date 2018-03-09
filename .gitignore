@@ -1,0 +1,13 @@
+# Linux
+.directory
+*~
+
+
+# npm
+node_modules
+package-lock.json
+*.log
+*.gz
+
+#env
+.env
