@@ -12,7 +12,7 @@ pipeline {
             steps {
                 echo 'Testing...'
 		sh 'ls'
-		sh 'ssh -i BBKeypair.pem ubuntu@172.31.90.151 pwd'
+		sh 'ssh -i ~/.ssh/BBKeypair.pem ubuntu@172.31.90.151 pwd'
             }
         }
 	stage('PROD') {
