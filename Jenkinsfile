@@ -11,7 +11,7 @@ pipeline {
         stage('TEST') {
             steps {
                 echo 'Testing...'
-		sh ‘ssh ubuntu@172.31.90.151 pwd’
+		sh 'ssh ubuntu@172.31.90.151 pwd'
             }
         }
 	stage('PROD') {
