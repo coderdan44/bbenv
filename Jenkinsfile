@@ -11,7 +11,8 @@ pipeline {
         stage('TEST') {
             steps {
                 echo 'Testing...'
-		sh 'ssh -o StrictHostKeyChecking=no ubuntu@172.31.90.151 pwd'
+		ls
+		sh 'ssh -i BBKeypair.pem ubuntu@172.31.90.151 pwd'
             }
         }
 	stage('PROD') {
